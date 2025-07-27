@@ -1,0 +1,70 @@
+<div class="layout-container">
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav mode="side" opened class="sidenav">
+      <mat-nav-list>
+        <h3 matSubheader>Angular Material Components</h3>
+        
+        <a mat-list-item routerLink="typography" routerLinkActive="active-link">
+          <mat-icon matListItemIcon>text_fields</mat-icon>
+          <span matListItemTitle>Typography</span>
+        </a>
+        
+        <a mat-list-item routerLink="buttons" routerLinkActive="active-link">
+          <mat-icon matListItemIcon>smart_button</mat-icon>
+          <span matListItemTitle>Buttons</span>
+        </a>
+        
+        <a mat-list-item routerLink="button-toggles" routerLinkActive="active-link">
+          <mat-icon matListItemIcon>toggle_on</mat-icon>
+          <span matListItemTitle>Button Toggles</span>
+        </a>
+        
+        <a mat-list-item routerLink="icons" routerLinkActive="active-link">
+          <mat-icon matListItemIcon>emoji_emotions</mat-icon>
+          <span matListItemTitle>Icons</span>
+        </a>
+        
+        <a mat-list-item routerLink="badges" routerLinkActive="active-link">
+          <mat-icon matListItemIcon>notifications</mat-icon>
+          <span matListItemTitle>Badges</span>
+        </a>
+        
+        <a mat-list-item routerLink="menus" routerLinkActive="active-link">
+          <mat-icon matListItemIcon>menu</mat-icon>
+          <span matListItemTitle>Menus</span>
+        </a>
+        
+        <a mat-list-item routerLink="panels" routerLinkActive="active-link">
+          <mat-icon matListItemIcon>expand_more</mat-icon>
+          <span matListItemTitle>Expansion Panels</span>
+        </a>
+        
+        <a mat-list-item routerLink="tabs" routerLinkActive="active-link">
+          <mat-icon matListItemIcon>tab</mat-icon>
+          <span matListItemTitle>Tabs</span>
+        </a>
+        
+        <a mat-list-item routerLink="stepper" routerLinkActive="active-link">
+          <mat-icon matListItemIcon>linear_scale</mat-icon>
+          <span matListItemTitle>Stepper</span>
+        </a>
+        
+        <a mat-list-item routerLink="dialogs" routerLinkActive="active-link">
+          <mat-icon matListItemIcon>open_in_new</mat-icon>
+          <span matListItemTitle>Dialogs</span>
+        </a>
+        
+      </mat-nav-list>
+    </mat-sidenav>
+    
+    <mat-sidenav-content class="main-content">
+      <div class="content-header">
+        <h1>Angular Material Components</h1>
+        <p>Explore and test Angular Material components</p>
+      </div>
+      <div class="component-content">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

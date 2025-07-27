@@ -21,10 +21,14 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RxReactiveFormsModule } from '@rxweb/reactive-form-validators';
-
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+// ...existing code...
 
 
 const angualrMaterial = [
+  MatListModule,
+  MatSidenavModule,
   // Add Angular Material modules here
   ReactiveFormsModule,
   MatButtonModule,

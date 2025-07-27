@@ -1,0 +1,22 @@
+<div *ngIf="loading">Loading users...</div>
+<div *ngIf="error">{{ error }}</div>
+<table *ngIf="users.length" class="user-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Username</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.name }}</td>
+      <td>{{ user.email }}</td>
+      <td>{{ user.username }}</td>
+      <td>
+        <button mat-button color="primary" (click)="goToUser(user.id)">View</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

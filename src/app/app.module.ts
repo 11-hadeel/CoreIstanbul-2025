@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -32,7 +32,8 @@ import { InputsComponent } from './form/inputs/inputs.component';
 import { DialogsComponent } from './angular-material/dialogs/dialogs.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BootstrapComponent } from './bootstrap/bootstrap.component';
-
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { UserListComponent } from './user-list/user-list.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,13 +62,17 @@ import { BootstrapComponent } from './bootstrap/bootstrap.component';
     StepperComponent,
     InputsComponent,
     DialogsComponent,
-    BootstrapComponent
+    BootstrapComponent,
+    UserDetailsComponent,
+    UserListComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule, 
-    SharedModule, NgbModule
+    SharedModule, NgbModule,    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
